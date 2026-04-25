@@ -84,6 +84,19 @@ dafny verify dafny-exercises/example.dfy
 
 If that succeeds, your setup is ready for the assignment.
 
+## Check if your annotation is correct
+
+Use Dafny verification on the file you are working on.
+
+For example, if your file is q3, run `dafny verify dafny-exercises/q3.dfy` from the repository root.
+
+How to read the result:
+
+- If Dafny reports `verified, 0 errors`, your annotations are consistent with the program 
+and specification.
+- If Dafny reports a postcondition, assertion, or invariant failure, the annotation is not yet 
+strong enough (or is incorrect) and needs to be revised.
+
 ## Troubleshooting
 
 - `dotnet: not found`: install .NET SDK and restart your terminal.
